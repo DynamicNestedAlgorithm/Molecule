@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class Project extends Model
 {
-    protected $fillable = ['name', 'description','file','language','status','deadline'];
+    protected $fillable = ['name', 'description','file','language','status','created_by','deadline'];
    
     use SoftDeletes;
     public function getFilePath()

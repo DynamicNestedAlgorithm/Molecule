@@ -21,6 +21,16 @@ Route::post('/projects/update/{id}', 'ProjectsController@update')->name('project
 Route::get('/projects/edit/{id}', 'ProjectsController@edit')->name('projects.edit');
 Route::get('/projects/delete/{id}', 'ProjectsController@destroy')->name('projects.delete');
 
+Route::get('/development', 'DevelopmentController@index')->name('development.index');
+
+Route::get('/teams', 'TeamsController@index')->name('teams.index');
+Route::post('/teams/create', 'TeamsController@store')->name('teams.store');
+Route::get('/teams/create', 'TeamsController@create')->name('teams.create');
+Route::get('/teams/edit/{id}', 'TeamsController@edit')->name('teams.edit');
+Route::get('/teams/update/{id}', 'TeamsController@update')->name('teams.update');
+Route::get('/teams/delete/{id}', 'TeamsController@destroy')->name('teams.delete');
+
+
 
 Auth::routes();
 

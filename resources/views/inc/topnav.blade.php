@@ -12,7 +12,8 @@
                         </b>
                     </a>
                 </div>
-            <a href="{{ route('projects.create') }}" class="new-btn" style="float:right;">Create Project</a>
+
+                 <a href="{{ route('projects.create') }}" class="new-btn" style="float:right;">Create Project</a>
 
                 <!-- /Logo -->
                 <!-- Search input and Toggle icon -->
@@ -30,7 +31,7 @@
                                 <span class="point"></span>
                             </span>
                         </a>
-                        <ul class="dropdown-menu mailbox animated slideInUp">
+                        <ul class="dropdown-menu box mailbox animated slideInUp">
                             <li>
                                 <div class="drop-title">You have 1 new messages</div>
                             </li>
@@ -68,7 +69,7 @@
                                 <span class="point"></span>
                             </span>
                         </a>
-                        <ul class="dropdown-menu dropdown-tasks animated slideInUp">
+                        <ul class="dropdown-menu box dropdown-tasks animated slideInUp">
                             <li>
                                 <a href="#">
                                     <div>

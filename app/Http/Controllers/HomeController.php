@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -24,10 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $projects = Project::orderBy('name', 'desc')->paginate(8);
+        $user = Auth::user()->email;
+        $projects = Project::where('created_by', $user)->orderBy('name', 'desc')->paginate(10);
+        
         return view('dashboard.dashboard')
         ->with('projects', $projects)
-        ->with('projects_count', Project::all());
+        ->with('projects_count', $projects);
 
         // @see: https://bitbucket.org/account/user/<username or team>/api
   $oauth_params = array(

@@ -57,12 +57,36 @@
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
-                    <div class="row">
                        
-                            <div class="white-box middle-box">
+                            <div class=" middle-box"><br>
                                 <h2 class="box-title text-center" style="font-size:24px !important;">Development</h2>
-                                
-                              
+                                <br>
+                                    <div class="row extra-margin middle-box">
+                                        <div class="col-md-6 white-box">
+                                            <h4 class="" style="font-size:16px !important;">Live View</h4>
+                                            <a href="#">
+                                                <img src="" width="100%" alt="Live View">
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href="#" class="btn-mol">View Project</a>
+                                        </div>
+                                        <div class="col-md-6 ">
+                                            <div class="row extra-margin white-box">
+                                                <div class="col-md-6">
+                                                    <h4 class="" style="font-size:16px !important;">Team Members</h4>
+                                                </div>
+                                            </div>   
+                                            <br>
+                                            <div class="row extra-margin  white-box">
+                                                <div class="col-md-6">
+                                                    <h4 class="" style="font-size:16px !important;">Commits</h4>
+                                                
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>

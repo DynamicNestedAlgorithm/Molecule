@@ -42,41 +42,48 @@
             <div id="page-wrapper">
                     <div class="row bg-title container">
                         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                            <h4 class="page-title">Projects</h4>
+                            <h4 class="page-title">Development</h4>
                             <ol class="breadcrumb">
                                 <li>
-                                    <a href="/home">Dashboard</a>
+                                    <a href="/home">Dashboard -</a>
+                                </li>  
+                                <li>
+                                    <a href="/teams"> - Teams </a>
                                 </li>
-                                <li class="active"></li>
                             </ol>
                         </div>
                         <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-
+                            @can('isAdmin')
+                                <div class="container">
+                                    <a href="{{ route('teams.create') }}" style="color:#666; margin-top:8px; border-radius: 4px; font-size: 12px; padding:5px 7px; background:#ddd;" class="  pull-right">Create Team</a>
+                                </div>
+                            @endcan
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
-                    <div class="row">
-                            <div class=" middle-box">
-                                <h2 class="box-title text-center" style="font-size:24px !important;">Projects</h2>
-                                
-                               <!-- Equal width cols, same on all screen sizes -->
-                               <div class="container">
-                                    @foreach($projects->chunk(3) as $chunk)
-                                         <div class="row">
-                                            @foreach($chunk as $project)
-                                                <div class="col the-card">
-                                                     <h5 class="p-name bold"  style="font-size:20px !important;">{{ $project->name }}</h5>
-                                                     <h6 class="p-description medium">{{ $project->description }}</h6>
-                                                     <small class="p-status light float-left">{{ $project->status }}</small>
-                                                     <br>
-                                                     <br>
-                                                     <small class="p-deadline float-right">deadline: {{ $project->deadline }}</small>
+                       
+                            <div class=" middle-box"><br>
+                                <h2 class="box-title text-center" style="font-size:24px !important;">Teams</h2>
+                                <br>
+                                    <div class="row extra-margin middle-box">
+                                         <div class="col-md-6 ">
+                                            <div class="row extra-margin white-box">
+                                                <div class="col-md-6">
+                                                    <h2 class="" style="font-size:20px !important;">Team 1</h2>
                                                 </div>
-                                            @endforeach
+                                            </div>   
+                                            <br>
                                         </div>
-                                    @endforeach
-                                </div>
-                            </div>
+
+                                         <div class="col-md-6 ">
+                                            <div class="row extra-margin  white-box">
+                                                    <div class="col-md-6">
+                                                        <h2 class="" style="font-size:20px !important;">Team 2</h2>
+                                                    
+                                                    </div>
+                                                </div>
+                                         </div>
+                                    </div>
                             </div>
                         </div>
                     </div>

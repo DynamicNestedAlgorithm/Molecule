@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Project;
 use Storage;
+use Illuminate\Support\Facades\Auth;
 
 class ProjectsController extends Controller
 {
@@ -15,7 +16,8 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Project::orderBy('name', 'desc')->paginate(10);
+        $user = Auth::user()->email;
+        $projects = Project::where('created_by', $user)->orderBy('name', 'desc')->paginate(10);
         return view('dashboard.projects.index', compact('projects'));
 
     }
@@ -47,12 +49,13 @@ class ProjectsController extends Controller
             'deadline'   => 'required',
         ]);
        
-   
+      $user = Auth::user()->email;
       $name = $request->input('name'); 
       $description = $request->input('description'); 
       $language = $request->input('language'); 
       $deadline = $request->input('deadline'); 
       $status = 'Specification Analysis';    
+      $created_by = $user;    
       $file = $request->file('file')->store('public/files');
         
       Project::updateOrCreate([
@@ -60,6 +63,7 @@ class ProjectsController extends Controller
           'file' => $file,
           'description' => $description,
           'status'   => $status,
+          'created_by'   => $created_by,
           'language'   => $language,
           'deadline'   => $deadline
       ]);
@@ -108,7 +112,7 @@ class ProjectsController extends Controller
        $project ->capacity  = $request->input('capacity');
        $project ->save();
 
-       return redirect('/projects')->with('success', 'Great Job!, Meeting Room Updated! :)');
+       return redirect('/projects')->with('success', 'Awesome!, Project Updated! :)');
    
     }
 
@@ -122,7 +126,7 @@ class ProjectsController extends Controller
     {
         $project = Project::find($id);
         $project->delete();
-        return redirect('/projects')->with('success','Whohoo! Meeting Room Deleted, Now Lets Add More ;)');
+        return redirect('/projects')->with('success','Awesome! Project Deleted, Now Lets Add More ;)');
     
     }
 }

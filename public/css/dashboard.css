@@ -18,6 +18,7 @@
 }
 
 * {
+    letter-spacing: 0.06em;
     outline: 0 !important
 }
 
@@ -28,7 +29,6 @@ body {
     overflow-x: hidden;
     color: #313131;
     font-weight: 300;
-    letter-spacing: 0.06em;
 
 }
 
@@ -733,15 +733,19 @@ hr {
     -webkit-box-shadow: 0 !important;
     -moz-box-shadow: 0 !important;
     padding-bottom: 8px;
-    margin-top: 0
+    margin-top: 0;
+    font-size: 14px;
 }
 
 .dropdown-menu>li>a {
+    color: #666 !important;
     padding: 9px 20px
 }
 
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
+    color: #000 !important;
+    font-weight: 500;
     background: #f7fafc
 }
 
@@ -991,7 +995,7 @@ pre {
     min-height: 568px;
     background: #edf1f5
 }
-.the-card{
+.the-card,.box{
     background: #fff;
     padding: 30px 20px;
     box-shadow: 0px 0px 10px rgba(100,100,100,.034);
@@ -1000,7 +1004,7 @@ pre {
     transition: 0.3s ease-in-out;
 }
 .the-card:hover{
-    box-shadow: 0px 0px 30px rgba(100,100,100,.054);
+    box-shadow: 0px 10px 30px rgba(145, 163, 182, 0.411);
 }
 .footer {
     bottom: 0;
@@ -1783,7 +1787,10 @@ table.dataTable thead .sorting:after {
     transition: all 0.2s ease-in-out;
 }
 .white-box:hover{
-    box-shadow: 0px 0px 20px rgba(120, 156, 172, 0.105);
+    box-shadow: 0px 10px 30px rgba(145, 163, 182, 0.267);
+}
+.extra-margin{
+    margin: 5px;
 }
 
 .white-box .box-title {
@@ -5193,9 +5200,9 @@ table.focus-on tbody tr.focused th {
     margin-left:100px;
 }
 .middle-box{
-    width:85%;
+    width:95%;
     margin: auto;
-    padding: 40px 30px;
+    padding: 0px 5px;
     margin-bottom:70px;
 }
 .right-sidebar .rpanel-title {

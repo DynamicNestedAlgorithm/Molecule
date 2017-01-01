@@ -98,7 +98,6 @@
                                         <div class="form-group row">
                                                 <input type="file" class="input-field" name="file" placeholder="Specification Document">
                                         </div>
-
                                         <br>
                                         <div class="center">
                                             <input type="submit" class="btn-mol" value="Create">

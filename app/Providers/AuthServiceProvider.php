@@ -41,6 +41,9 @@ class AuthServiceProvider extends ServiceProvider
         $gate->define( 'isMentee',function($user){
             return $user->user_type == 'mentee';
         });
+        $gate->define( 'isAdmin',function($user){
+            return $user->user_type == 'admin';
+        });
         //
     }
 }
