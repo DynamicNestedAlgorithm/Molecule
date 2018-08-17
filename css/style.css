@@ -41,7 +41,7 @@ a:focus {
 	content: '';
 	width: 70px;
 	height: 1px;
-	background: #01E6E2;
+	background: rgb(0, 213, 228);
 	position: absolute;
 	bottom: -1px;
 	left: 0;
@@ -51,7 +51,7 @@ a:focus {
 	content: '';
 	width: 70px;
 	height: 1px;
-	background: #01E6E2;
+	background: rgb(0, 213, 228);
 	position: absolute;
 	bottom: -1px;
 	left: calc(50% - 35px);
@@ -62,8 +62,8 @@ a:focus {
 }
 
 .social-icon span:hover {
-	background: #01E6E2 !important;
-	border-color: #01E6E2 !important;
+	background: rgb(0, 213, 228) !important;
+	border-color: rgb(0, 213, 228) !important;
 	color: #fff !important;
 }
 
@@ -101,7 +101,7 @@ a:focus {
 .navbar-default .navbar-brand:focus {
 	font-weight: 700;
 	font-size: 40px;
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 	padding-top: 30px;
 }
 
@@ -114,22 +114,23 @@ a:focus {
 .btn-nav {
 	padding: 7px 25px !important;
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 	letter-spacing: 1px;
 	background: transparent;
 	border: 1px solid white;
-	transition: all .5s;
+	transition: all .5s ease-in-out;
 	border-radius: 4px;
 }
 
 .btn-nav:hover {
-	background: #01E6E2 !important;
-	border: 1px solid #01E6E2 !important;
+	padding: 8px 26px !important;
+	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
+	border: 0px solid rgb(0, 204, 240) !important;
 	color: #fff !important;
 }
 
 .navbar-default .navbar-nav>li {
-	font-size: 16px;
+	font-size: 14px;
 	margin: 30px 20px 0;
 	padding: 5 10px;
 	font-weight: 400;
@@ -139,9 +140,9 @@ a:focus {
 }
 
 .navbar-default .navbar-nav>li>a.active {
-	color: #01E6E2 !important;
+	color: rgb(0, 213, 228) !important;
 	background: none;
-	border-bottom: 3px solid;
+	border-bottom: 2px solid;
 }
 
 /* -------------------------------------------------------
@@ -171,7 +172,7 @@ a:focus {
 
 .caption {
 	color: #fff;
-	margin-left: 10%;
+	margin-left: 8%;
 }
 
 .caption h1 {
@@ -183,17 +184,20 @@ a:focus {
 }
 
 .caption h2 {
-	color: #01e6e2;
+	color: rgb(0, 206, 221);
 	display: inline-block;
 	margin: 0 0 0 20px;
 	font-weight: 600;
 	padding-right: 20px;
+	font-size: 43px;
 }
-
+.busy{
+	color: #006866 !important;
+}
 .caption span {
 	font-weight: 100;
-	font-size: 50px;
-	color: #b6b6b6;
+	font-size: 43px;
+	color: #00D6CB;
 }
 
 .typed-cursor {
@@ -338,7 +342,7 @@ a:focus {
 
 .skill-items .skill-title span {
 	font-size: 35px;
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 	margin-bottom: 30px;
 }
 
@@ -352,7 +356,7 @@ a:focus {
 .skills-progress span {
 	width: 0;
 	height: 100%;
-	background: #01E6E2;
+	background: rgb(0, 213, 228);
 	display: block;
 }
 
@@ -372,7 +376,7 @@ a:focus {
 
 .numbers .num-items span {
 	font-size: 40px;
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 }
 
 .numbers .num-items p {
@@ -408,7 +412,7 @@ a:focus {
 
 .services-items .item span {
 	font-size: 40px;
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 }
 
 .services-items .item h5 {
@@ -461,7 +465,7 @@ a:focus {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-	background: #01E6E2;
+	background: rgb(0, 213, 228);
 }
 
 /* -------------------------------------------------------
@@ -480,7 +484,7 @@ a:focus {
 }
 
 .portfolio .filtering .active {
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 }
 
 .portfolio .filtering span:after {
@@ -589,8 +593,8 @@ a:focus {
 	color: #fff;
 	font-size: 18px;
 	letter-spacing: 1px;
-	background: #01E6E2;
-	border: 1px solid #01E6E2;
+	background: rgb(0, 213, 228);
+	border: 1px solid rgb(0, 213, 228);
 	transition: all .5s;
 }
 
@@ -679,16 +683,16 @@ a:focus {
 
 .contact-item input:focus,
 .contact-item textarea:focus {
-	border-color: #01E6E2;
+	border-color: rgb(0, 213, 228);
 }
 
 .contact-item .button {
 	width: auto;
 	padding: 8px 22px;
 	margin-left: 15px;
-	background: #01E6E2;
+	background: rgb(0, 213, 228);
 	color: #fff;
-	border: 1px solid #01E6E2;
+	border: 1px solid rgb(0, 213, 228);
 	transition: all .5s;
 }
 
@@ -719,7 +723,7 @@ a:focus {
 }
 
 .footer p span {
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 }
 
 /* -------------------------------------------------------
@@ -745,7 +749,7 @@ a:focus {
 }
 
 #particles-js {
-	width: 100%;
+	width: 50%;
 	height: 100%;
 }
 
@@ -799,7 +803,7 @@ a:focus {
 }
 
 .tona-blog .caption h1 {
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 	font-weight: 100;
 }
 
@@ -873,14 +877,14 @@ a:focus {
 
 .post .post-title h6 {
 	font-size: 14px;
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 }
 
 .post-content .tona-post {
 	margin-left: 20px;
 	padding: 20px;
 	background: #fafafa;
-	border-left: 2px solid #01E6E2;
+	border-left: 2px solid rgb(0, 213, 228);
 }
 
 .post .post-info {
@@ -897,7 +901,7 @@ a:focus {
 
 .post .post-info span {
 	margin-right: 5px;
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 }
 
 /* ------------- side-bar ----------------- */
@@ -913,7 +917,7 @@ a:focus {
 }
 
 .side-bar .tit:after {
-	background: #01E6E2;
+	background: rgb(0, 213, 228);
 }
 
 .side-bar .about-bar img {
@@ -1021,7 +1025,7 @@ a:focus {
 }
 
 .comment .com-content h6 span {
-	color: #01E6E2;
+	color: rgb(0, 213, 228);
 	font-size: 14px;
 	float: right;
 }
@@ -1066,8 +1070,8 @@ a:focus {
 .com-form button {
 	padding: 10px 30px;
 	color: #fff;
-	background: #01E6E2;
-	border: 1px solid #01E6E2;
+	background: rgb(0, 213, 228);
+	border: 1px solid rgb(0, 213, 228);
 	margin-left: 15px;
 	transition: all .5s;
 }
@@ -1078,38 +1082,38 @@ a:focus {
 }
 
 .btn-mol {
-	padding: 7px 25px;
+	padding: 9px 25px;
 	color: #fff;
 	font-size: 16px;
 	letter-spacing: 1px;
-	background: #01E6E2;
-	border: 1px solid #01E6E2;
-	transition: all .5s;
+	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
+	transition: all .5s ease-in-out;
 	border-radius: 4px;
 }
 
 .btn-mol-r {
-	padding: 7px 25px;
-	color: #01E6E2;
+	padding: 8px 25px;
+	color: #006866;
 	font-size: 16px;
 	letter-spacing: 1px;
 	background: transparent;
-	border: 1px solid #01E6E2;
-	transition: all .5s;
+	border: 1px solid #006866;
+	transition: all .5s ease-in-out;
 	border-radius: 4px;
 }
 
 .btn-mol-r:hover {
-	background: #01E6E2;
+	background: #006866;
 	color: white;
 }
 
 .btn-mol:hover {
-	background: transparent;
+	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 243, 227));
 }
 
 .mb-2 {
 	margin-bottom: 20px;
+	color: #006866;
 }
 
 .navbar-brand>img {

@@ -16,16 +16,18 @@
 	{
 		background: none;
 	}
-
 	.navbar-default .navbar-toggle .icon-bar{
-		background: #c49b66;
+		background: #00D6CB;
 	}
 		
 	.navbar-default .navbar-collapse{
 		text-align: center;
 		border: none;
-		background: #111;
-		margin-top: 10px;
+		background: rgb(4, 57, 59);
+		margin-top: 25px;
+		padding: 35px 30px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, .04);
 	}
 
 	.tona-header, .particle{
@@ -45,7 +47,7 @@
 	.caption h2,
 	.caption span
 	{
-		font-size: 30px;
+		font-size: 40px;
 	}
 
 	.hero .hero-item h4{
