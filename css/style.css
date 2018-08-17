@@ -186,13 +186,14 @@ a:focus {
 .caption h2 {
 	color: rgb(0, 206, 221);
 	display: inline-block;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 15px;
 	font-weight: 600;
 	padding-right: 20px;
-	font-size: 43px;
+	font-size: 37px;
 }
 .busy{
 	color: #006866 !important;
+	font-size: 30px !important;
 }
 .caption span {
 	font-weight: 100;
@@ -1093,17 +1094,17 @@ a:focus {
 
 .btn-mol-r {
 	padding: 8px 25px;
-	color: #006866;
+	color: #032c3396;
 	font-size: 16px;
 	letter-spacing: 1px;
 	background: transparent;
-	border: 1px solid #006866;
+	border: 1px solid #032c3381;
 	transition: all .5s ease-in-out;
 	border-radius: 4px;
 }
 
 .btn-mol-r:hover {
-	background: #006866;
+	background: #032c33;
 	color: white;
 }
 
