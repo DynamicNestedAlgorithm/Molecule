@@ -673,7 +673,7 @@ a:focus {
 	border: none;
 	border-bottom: 1px solid #ccc;
 	background: none;
-	color: #fff;
+	color: #757575;
 }
 
 .contact-item textarea {
@@ -1109,7 +1109,7 @@ a:focus {
 }
 
 .btn-mol:hover {
-	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 243, 227));
+	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 243, 227)) !important;
 }
 
 .mb-2 {
@@ -1166,6 +1166,7 @@ a:focus {
 }
 .form-sec {
 	min-height: 100vh;
+	padding-left: 0px;
 }
 .reg-head {
 	margin-top: 50px;
@@ -1181,8 +1182,36 @@ a:focus {
 	padding: 12px 12px;
 }
 
+.molecule-form {
+	max-width: 765px;
+	margin: 0 auto;
+}
+.form-card {
+	background-color: #ffffff;
+	padding: 12px;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+	min-height: 76vh;
+}
+.text-primary {
+	color: #01e6e2;
+}
+.text-bold {
+	font-weight: bold;
+}
+
+.mobile-logo-form {
+	margin: 0 auto;
+	width: 86px;
+	margin-top: 0px;
+	padding-top: 45px;
+}
+
 @media (max-width: 768px) {
 	.particle {
 		background: none;
+	}
+	.reg-head {
+		margin-top: 20px;
 	}
 }
