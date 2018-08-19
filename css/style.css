@@ -1,4 +1,4 @@
-@import "main.css";
+@import 'main.css';
 /* -------------------------------------------------------
                      Global 
 -------------------------------------------------------- */
@@ -58,7 +58,7 @@ a:focus {
 }
 
 .social-icon span {
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .social-icon span:hover {
@@ -92,7 +92,7 @@ a:focus {
 	top: 0;
 	left: 0;
 	width: 100%;
-	transition: all .5s;
+	transition: all 0.5s;
 	z-index: 99;
 }
 
@@ -105,7 +105,7 @@ a:focus {
 	padding-top: 30px;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
 	margin: 0 !important;
 	color: #fff !important;
 	padding: 7px 0px;
@@ -125,7 +125,7 @@ a:focus {
 	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
 }
 
-.navbar-default .navbar-nav>li {
+.navbar-default .navbar-nav > li {
 	font-size: 14px;
 	margin: 30px 20px 0;
 	padding: 5 10px;
@@ -135,7 +135,7 @@ a:focus {
 	position: relative;
 }
 
-.navbar-default .navbar-nav>li>a.active {
+.navbar-default .navbar-nav > li > a.active {
 	color: rgb(0, 213, 228) !important;
 	background: none;
 	border-bottom: 2px solid;
@@ -177,7 +177,7 @@ a:focus {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, .5);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .caption {
@@ -201,14 +201,14 @@ a:focus {
 	padding-right: 20px;
 	font-size: 37px;
 }
-.busy{
+.busy {
 	color: #006866 !important;
 	font-size: 30px !important;
 }
 .caption span {
 	font-weight: 100;
 	font-size: 43px;
-	color: #00D6CB;
+	color: #00d6cb;
 }
 
 .typed-cursor {
@@ -377,7 +377,7 @@ a:focus {
 
 .numbers {
 	padding: 100px 0;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, 0.8);
 	background-blend-mode: overlay;
 	background-image: url(../img/numbers.jpg);
 	background-size: cover;
@@ -436,8 +436,8 @@ a:focus {
 
 .clients {
 	background-blend-mode: overlay;
-	background: rgba(0, 0, 0, .8);
-	background-image: url(../img/client-bg.jpg);
+	/* background: rgba(0, 0, 0, .8);
+	background-image: url(../img/client-bg.jpg); */
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -459,7 +459,7 @@ a:focus {
 
 .client-say .client-item p {
 	font-size: 20px;
-	color: #ccc;
+	color: white;
 }
 
 .client-say .client-item h6 {
@@ -499,7 +499,7 @@ a:focus {
 }
 
 .portfolio .filtering span:after {
-	content: "-";
+	content: '-';
 	color: #111;
 	position: absolute;
 	right: 0;
@@ -507,7 +507,7 @@ a:focus {
 }
 
 .portfolio .filtering span:last-child:after {
-	content: " ";
+	content: ' ';
 }
 
 .item-img {
@@ -521,10 +521,10 @@ a:focus {
 	left: 15px;
 	right: 15px;
 	bottom: 15px;
-	background: rgba(0, 0, 0, .8);
+	background: rgba(0, 0, 0, 0.8);
 	opacity: 0;
 	overflow: hidden;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .item-img-overlay .icon {
@@ -560,7 +560,7 @@ a:focus {
 	width: 100%;
 	text-align: center;
 	color: #aaa;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .item-img-overlay .overlay-info h6 {
@@ -584,7 +584,7 @@ a:focus {
 -------------------------------------------------------- */
 
 .hire {
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, 0.8);
 	background-blend-mode: overlay;
 	background-image: url(../img/numbers.jpg);
 	background-size: cover;
@@ -606,7 +606,7 @@ a:focus {
 	letter-spacing: 1px;
 	background: rgb(0, 213, 228);
 	border: 1px solid rgb(0, 213, 228);
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .hire button:hover {
@@ -632,7 +632,7 @@ a:focus {
 	border: 1px solid #000;
 	letter-spacing: 4px;
 	display: inline-block;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .blog .to-blog p:hover {
@@ -658,7 +658,7 @@ a:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, .4);
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .contact .tit {
@@ -667,7 +667,7 @@ a:focus {
 
 .contact-item .form {
 	padding: 40px 20px;
-	background: rgba(0, 0, 0, .2);
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .contact .form-group {
@@ -683,7 +683,7 @@ a:focus {
 	border: none;
 	border-bottom: 1px solid #ccc;
 	background: none;
-	color: #fff;
+	color: #757575;
 }
 
 .contact-item textarea {
@@ -704,7 +704,7 @@ a:focus {
 	background: rgb(0, 213, 228);
 	color: #fff;
 	border: 1px solid rgb(0, 213, 228);
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .contact-item .button:hover {
@@ -779,7 +779,7 @@ a:focus {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(34, 34, 34, .5);
+	background: rgba(34, 34, 34, 0.5);
 }
 
 .bg-video .button-scroll {
@@ -805,7 +805,7 @@ a:focus {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, .8);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .tona-blog .caption {
@@ -843,7 +843,7 @@ a:focus {
 }
 
 .post .img-post .img-overlay {
-	background: rgba(255, 255, 255, .5);
+	background: rgba(255, 255, 255, 0.5);
 	position: absolute;
 	top: 10px;
 	left: 10px;
@@ -852,7 +852,7 @@ a:focus {
 	text-align: center;
 	opacity: 0;
 	overflow: hidden;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .post .img-post .img-overlay span {
@@ -878,7 +878,7 @@ a:focus {
 
 .post .img-post:hover .img-overlay span {
 	top: calc(50% - 25px);
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .post-content {
@@ -980,7 +980,7 @@ a:focus {
 	display: inline-block;
 	padding: 5px 10px;
 	margin-bottom: 2px;
-	background: #fafafa
+	background: #fafafa;
 }
 
 .side-bar .inst img {
@@ -1083,7 +1083,7 @@ a:focus {
 	background: rgb(0, 213, 228);
 	border: 1px solid rgb(0, 213, 228);
 	margin-left: 15px;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .com-form button:hover {
@@ -1097,7 +1097,7 @@ a:focus {
 	font-size: 16px;
 	letter-spacing: 1px;
 	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
-	transition: all .5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	border-radius: 4px;
 }
 
@@ -1108,7 +1108,7 @@ a:focus {
 	letter-spacing: 1px;
 	background: transparent;
 	border: 1px solid #032c3381;
-	transition: all .5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	border-radius: 4px;
 }
 
@@ -1118,7 +1118,7 @@ a:focus {
 }
 
 .btn-mol:hover {
-	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 243, 227));
+	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 243, 227)) !important;
 }
 
 .mb-2 {
@@ -1126,6 +1126,101 @@ a:focus {
 	color: #006866;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
 	width: 150px;
+}
+
+.reg-color {
+	background: linear-gradient(90deg, #01e6e2, #03a097);
+}
+.f-20 {
+	font-size: 20px;
+}
+
+.reg-img {
+	margin: 0 auto;
+	width: 210px;
+	margin-top: 60px;
+}
+
+.text-white {
+	color: white;
+}
+
+.mt-2 {
+	margin-top: 20px;
+}
+
+.clients .client-say {
+	padding: 0px 100px;
+}
+
+.mole-slider {
+	margin-top: 50px !important;
+	margin-bottom: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 2px 2px 5px #00000052;
+}
+.regg-img {
+	min-height: 100vh;
+}
+.particles-absolute {
+	position: absolute;
+}
+.form-sec {
+	min-height: 100vh;
+	padding-left: 0px;
+}
+.reg-head {
+	margin-top: 50px;
+}
+.d-inline {
+	display: inline-block;
+}
+.form-opt .active h6 {
+	font-weight: bold;
+	color: #01e6e2;
+}
+.form-opt h6 {
+	padding: 12px 12px;
+}
+
+.molecule-form {
+	max-width: 765px;
+	margin: 0 auto;
+}
+.form-card {
+	background-color: #ffffff;
+	padding: 12px;
+	border-top-right-radius: 14px;
+	border-bottom-right-radius: 14px;
+	min-height: 76vh;
+}
+.text-primary {
+	color: #01e6e2;
+}
+.text-bold {
+	font-weight: bold;
+}
+
+.mobile-logo-form {
+	margin: 0 auto;
+	width: 86px;
+	margin-top: 0px;
+	padding-top: 45px;
+}
+
+@media (max-width: 768px) {
+	.particle {
+		background: none;
+	}
+	.reg-head {
+		margin-top: 20px;
+	}
 }
