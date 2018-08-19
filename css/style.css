@@ -156,7 +156,7 @@ a:focus {
 	clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 	overflow-x: hidden !important;
 }
-
+/* 
 .header-container{
     margin: auto;
     max-width: 100%;
@@ -169,7 +169,7 @@ a:focus {
     padding: 1em;
     background: rgb(12, 48, 83);
     font-weight: 300;
-}
+} */
 
 .header-overlay {
 	position: absolute;
