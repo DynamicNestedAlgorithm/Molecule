@@ -135,7 +135,7 @@ a:focus {
 	box-shadow: 0px 0px 50px rgba(8, 72, 83, 0.058)
 }
 .btn-nav {
-	padding: 12px 25px !important;
+	padding: 7px 25px !important;
 	color: white;
 	background: linear-gradient(195deg, rgb(0, 192, 226), rgb(1, 207, 194));
 	font-size: 12px;
