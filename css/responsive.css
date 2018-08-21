@@ -36,7 +36,7 @@
 		background: rgba(0, 150, 177, 0.473);
 	}
 	.caption h2 {
-		color: rgb(14, 178, 207);
+		color: rgb(0, 206, 206);
 		display: inline-block;
 		margin: 0 0 0 15px;
 		font-weight: 600;
@@ -61,7 +61,7 @@
 		background-attachment: scroll !important;
 	}
 	.left-item,.bg-overlay{
-		background: linear-gradient(-145deg, rgba(0, 97, 114, 0.096), rgba(1, 90, 102, 0.397));
+		background: linear-gradient(-145deg, rgba(0, 124, 146, 0.308), rgba(0, 71, 80, 0.308));
 	}
 
 	.mb-2 {
