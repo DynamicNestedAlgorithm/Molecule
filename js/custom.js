@@ -7,7 +7,7 @@ $(function() {
 
   //smooth scroll
   $('.navbar-nav').singlePageNav({
-    speed: 1000,
+    speed: 600,
     currentClass: 'active',
     offset: 80
   });
@@ -44,7 +44,7 @@ $(function() {
 
   // typejs
   $('header .caption h2').typed({
-    strings: ["Developers", "Business Owners", "a Mentor"],
+    strings: ["Developers", "Organizations", "a Mentor"],
     loop: true,
     startDelay: 1000,
     backDelay: 2000
