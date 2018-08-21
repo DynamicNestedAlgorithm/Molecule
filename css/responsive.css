@@ -29,6 +29,7 @@
 	}
 
 	.left-item{
+		background: rgba(0, 150, 177, 0.26);
 		transition: 0.8s ease-in-out;
 	}
 	.left-item:hover{

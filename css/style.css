@@ -213,7 +213,7 @@ a:focus {
 .bg-overlay{
 	height: 800px;
 	width: 200%;
-	background: linear-gradient(145deg, rgba(0, 192, 226, 0.096), rgba(0, 186, 211, 0.692));
+	background: linear-gradient(145deg, rgba(0, 192, 226, 0.11), rgba(0, 186, 211, 0.692));
 }
 .caption {
 	color: #fff;
@@ -402,13 +402,9 @@ a:focus {
 
   .bg-slide > .img:nth-child(4) {
   animation-delay: 18s;
-  background-image: url('../img/numbers.jpg');
+  background-image: url('../img/grow.jpg');
   }
 
-  .bg-slide > .img:nth-child(5) {
-  animation-delay: 24s;
-  background-image: url('../img/laptop1.jpg');
-  }
           @keyframes 
   imageAnimation {  0% {
   animation-timing-function: ease-in;
