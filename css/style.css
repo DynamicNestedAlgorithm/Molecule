@@ -72,7 +72,7 @@ a:focus {
 -------------------------------------------------------- */
 
 .navbar-default {
-	padding: 20px 0 15px;
+	padding: 10px 0 15px;
 	background: none;
 	border: none;
 	border-radius: 0;
@@ -84,6 +84,12 @@ a:focus {
 }
 .logo{
 	width: 45px !important;
+	float: left;
+}
+.logo-text{
+	float: right;
+	margin: 19px 0px 0px 0px;
+	font-size: 20px;
 }
 .nav-scroll {
 	background: #111;
@@ -115,13 +121,13 @@ a:focus {
 }
 .link{
 	color: #006866  !important;
-	padding: 8px 0px 8px 12px !important;
+	padding: 12px 0px 8px 12px !important;
 	border-left: 1.5px dashed transparent !important;
 	transition: all .1s ease-in-out;
 }
 .link:hover{
-	border-left: 1.5px dashed rgb(0, 217, 233) !important;
-	color: rgb(0, 217, 233) !important;
+	border-left: 1.5px dashed rgb(2, 208, 223) !important;
+	color: rgb(2, 208, 223) !important;
 }
 .the-nav{
 	background: rgb(255, 255, 255);
@@ -129,7 +135,7 @@ a:focus {
 	box-shadow: 0px 0px 50px rgba(8, 72, 83, 0.058)
 }
 .btn-nav {
-	padding: 7px 25px !important;
+	padding: 12px 25px !important;
 	color: white;
 	background: linear-gradient(195deg, rgb(0, 192, 226), rgb(1, 207, 194));
 	font-size: 12px;
@@ -1216,7 +1222,7 @@ a:focus {
 }
 
 .navbar-brand > img {
-	width: 150px;
+	max-width: 200px;
 }
 
 .reg-color {
