@@ -17,24 +17,64 @@
 		background: none;
 	}
 	.navbar-default .navbar-toggle .icon-bar{
-		background: #00D6CB;
-	}
-		
+		background: 	 rgb(0, 183, 207);
+
+	}	
 	.navbar-default .navbar-collapse{
 		text-align: center;
 		border: none;
-		background: rgb(4, 57, 59);
 		margin-top: 25px;
-		padding: 35px 30px;
+		padding: 35px 50px;
 		border-radius: 5px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, .04);
 	}
 
+	.left-item{
+		transition: 0.8s ease-in-out;
+	}
+	.left-item:hover{
+		background: rgba(0, 150, 177, 0.473);
+	}
+	.caption h2 {
+		color: rgb(14, 178, 207);
+		display: inline-block;
+		margin: 0 0 0 15px;
+		font-weight: 600;
+		padding-right: 20px;
+		font-size: 37px;
+	}
+	.busy {
+		color: #ffffff !important;
+		font-size: 30px !important;
+	}
+	.caption span {
+		font-weight: 100;
+		font-size: 43px;
+		color: #ffffff;
+	}
+	
+	.mob-btn-nav{
+		top: 30px !important;
+	}
 	.tona-header, .particle{
 		background-position: 50% 0% !important;
 		background-attachment: scroll !important;
 	}
+	.left-item,.bg-overlay{
+		background: linear-gradient(-145deg, rgba(0, 97, 114, 0.096), rgba(1, 90, 102, 0.397));
+	}
 
+	.mb-2 {
+		color: #ffffff;
+	}
+
+	.btn-mol-r {
+		border: 1.5px solid #fff;
+		color: white;
+	}
+	.btn-mol-r:hover {
+		border: 1.5px solid #032c3381;
+		color: white;
+	}
 	.caption{
 		text-align: center;
 		margin-left: 0;
