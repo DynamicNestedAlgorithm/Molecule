@@ -268,10 +268,13 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Profile</h4>
                         <ol class="breadcrumb">
                             <li>
-                                <a href="#">Dashboard</a>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Profile</a>
                             </li>
                             <li class="active"></li>
                         </ol>
@@ -282,179 +285,175 @@
                     <!-- /.col-lg-12 -->
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8 col-xs-12">
                         <div class="white-box">
-                            <div class="row row-in">
-                                <div class="col-lg-3 col-sm-6 row-in-br">
-                                    <ul class="col-in">
-                                        <li>
-                                            <span class="circle circle-md bg-info">
-                                                <i class="mdi mdi-clipboard-text"></i>
-                                            </span>
-                                        </li>
-                                        <li class="col-last">
-                                            <h3 class="counter text-right m-t-15">23</h3>
-                                        </li>
-                                        <li class="col-middle">
-                                            <h4>Total projects</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                                    <span class="sr-only">40% Complete (success)</span>
+                            <ul class="nav nav-tabs tabs customtab">
+                                <li class="active tab">
+                                    <a href="#home" data-toggle="tab">
+                                        <span class="visible-xs">
+                                            <i class="fa fa-home"></i>
+                                        </span>
+                                        <span class="hidden-xs">Activity</span>
+                                    </a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#settings" data-toggle="tab" aria-expanded="false">
+                                        <span class="visible-xs">
+                                            <i class="fa fa-cog"></i>
+                                        </span>
+                                        <span class="hidden-xs">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home">
+                                    <div class="steamline">
+                                        <div class="sl-item">
+                                            <div class="sl-left">
+                                                <img src="plugins/molecule-images/profile.jpg" alt="user" class="img-circle" /> </div>
+                                            <div class="sl-right">
+                                                <div class="m-l-40">
+                                                    <a href="#" class="text-info">Adeniran Opeyemi</a>
+                                                    <span class="sl-date">5 minutes ago</span>
+                                                    <p>assign a new task
+                                                        <a href="#"> Design weblayout</a>
+                                                    </p>
+                                                    <div class="m-t-20 row">
+                                                        <img src="plugins/molecule-images/profile.jpg" alt="user" class="col-md-3 col-xs-12" />
+                                                        <img src="plugins/molecule-images/profile.jpg" alt="user" class="col-md-3 col-xs-12" />
+                                                        <img src="plugins/molecule-images/profile.jpg" alt="user" class="col-md-3 col-xs-12" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-left">
+                                                <img src="plugins/molecule-images/profile.jpg" alt="user" class="img-circle" /> </div>
+                                            <div class="sl-right">
+                                                <div class="m-l-40">
+                                                    <a href="#" class="text-info">Adeniran Opeyemi</a>
+                                                    <span class="sl-date">5 minutes ago</span>
+                                                    <div class="m-t-20 row">
+                                                        <div class="col-md-2 col-xs-12">
+                                                            <img src="plugins/molecule-images/profile.jpg" alt="user" class="img-responsive" />
+                                                        </div>
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                                                nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                                                Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis
+                                                                sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue
+                                                                semper porta. Mauris massa</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-left">
+                                                <img src="plugins/molecule-images/profile.jpg" alt="user" class="img-circle" /> </div>
+                                            <div class="sl-right">
+                                                <div class="m-l-40">
+                                                    <a href="#" class="text-info">Adeniran Opeyemi</a>
+                                                    <span class="sl-date">5 minutes ago</span>
+                                                    <p class="m-t-10"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+                                                        odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
+                                                        quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+                                                        mauris. Fusce nec tellus sed augue semper </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sl-item">
+                                            <div class="sl-left">
+                                                <img src="plugins/molecule-images/profile.jpg" alt="user" class="img-circle" /> </div>
+                                            <div class="sl-right">
+                                                <div class="m-l-40">
+                                                    <a href="#" class="text-info">Adeniran Opeyemi</a>
+                                                    <span class="sl-date">5 minutes ago</span>
+                                                    <p>assign a new task
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-3 col-sm-6 row-in-br  b-r-none">
-                                    <ul class="col-in">
-                                        <li>
-                                            <span class="circle circle-md bg-success">
-                                                <i class="mdi mdi-clipboard-text"></i>
-                                            </span>
-                                        </li>
-                                        <li class="col-last">
-                                            <h3 class="counter text-right m-t-15">76</h3>
-                                        </li>
-                                        <li class="col-middle">
-                                            <h4>Completed Projects</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                    style="width: 40%">
-                                                    <span class="sr-only">40% Complete (success)</span>
-                                                </div>
+                                <div class="tab-pane" id="settings">
+                                    <form class="form-horizontal form-material">
+                                        <div class="form-group">
+                                            <label class="col-md-12">Full Name</label>
+                                            <div class="col-md-12">
+                                                <input type="text" placeholder="Adeniran Opeyemi" class="form-control form-control-line"> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="example-email" class="col-md-12">Email</label>
+                                            <div class="col-md-12">
+                                                <input type="email" placeholder="adeniran1059@gmail.com" class="form-control form-control-line" name="example-email" id="example-email"> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-12">Password</label>
+                                            <div class="col-md-12">
+                                                <input type="password" value="password" class="form-control form-control-line"> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-12">Phone No</label>
+                                            <div class="col-md-12">
+                                                <input type="text" placeholder="123 456 7890" class="form-control form-control-line"> </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-12">Message</label>
+                                            <div class="col-md-12">
+                                                <textarea rows="5" class="form-control form-control-line"></textarea>
                                             </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 row-in-br">
-                                    <ul class="col-in">
-                                        <li>
-                                            <span class="circle circle-md bg-danger">
-                                                <i class=" mdi mdi-clipboard-text"></i>
-                                            </span>
-                                        </li>
-                                        <li class="col-last">
-                                            <h3 class="counter text-right m-t-15">93</h3>
-                                        </li>
-                                        <li class="col-middle">
-                                            <h4>Outstanding Projects</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                    style="width: 40%">
-                                                    <span class="sr-only">40% Complete (success)</span>
-                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-12">Select Country</label>
+                                            <div class="col-sm-12">
+                                                <select class="form-control form-control-line">
+                                                    <option>Lagos</option>
+                                                    <option>Ghana</option>
+                                                    <option>Surulere</option>
+                                                    <option>Abuja</option>
+                                                    <option>Kaduna</option>
+                                                </select>
                                             </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-3 col-sm-6  b-0">
-                                    <ul class="col-in">
-                                        <li>
-                                            <span class="circle circle-md bg-warning">
-                                                <i class="mdi mdi-clipboard-text"></i>
-                                            </span>
-                                        </li>
-                                        <li class="col-last">
-                                            <h3 class="counter text-right m-t-15">83</h3>
-                                        </li>
-                                        <li class="col-middle">
-                                            <h4>Total Team Mates</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                    style="width: 40%">
-                                                    <span class="sr-only">40% Complete (success)</span>
-                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <button class="btn btn-mol">Update Profile</button>
                                             </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-4 col-xs-12">
                         <div class="white-box">
-                            <h3 class="box-title m-b-0">Team Mates </h3>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Members</th>
-                                            <th>Name</th>
-                                            <th>Progress</th>
-                                            <th>Others</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <a href="javascript:void(0)">Developer</a>
-                                            </td>
-                                            <td>Adeniran Opeyemi</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 75%">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Other Contents</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="javascript:void(0)">Developer</a>
-                                            </td>
-                                            <td>Adeniran Opeyemi</td>
-                                            <td>
-                                                <div class="progress">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 75%">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>Other Contents</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="user-bg">
+                                <img width="100%" alt="user" src="plugins/molecule-images/profile.jpg">
+                                <div class="overlay-box">
+                                    <div class="user-content">
+                                        <a href="javascript:void(0)">
+                                            <img src="plugins/molecule-images/profile.jpg" class="thumb-lg img-circle" alt="img">
+                                        </a>
+                                        <h4 class="text-white">User Name</h4>
+                                        <h5 class="text-white">info@myadmin.com</h5>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="white-box">
-                            <h3 class="box-title">Notifications</h3>
-                            <ul class="feeds">
-                                <li>
-                                    <div class="bg-info">
-                                        <i class="fa fa-bell-o text-white"></i>
-                                    </div> You have 4 pending tasks.
-                                    <span class="text-muted">Just Now</span>
-                                </li>
-                                <li>
-                                    <div class="bg-success">
-                                        <i class="ti-server text-white"></i>
-                                    </div> Server #1 overloaded.
-                                    <span class="text-muted">2 Hours ago</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Project Insights</h3>
-                            <ul class="list-inline text-right">
-                                <li>
-                                    <h5>
-                                        <i class="fa fa-circle m-r-5" style="color: #00bfc7;"></i>data 1</h5>
-                                </li>
-                                <li>
-                                    <h5>
-                                        <i class="fa fa-circle m-r-5" style="color: #fdc006;"></i>data 2</h5>
-                                </li>
-                                <li>
-                                    <h5>
-                                        <i class="fa fa-circle m-r-5" style="color: #9675ce;"></i>data 3</h5>
-                                </li>
-                            </ul>
-                            <div id="morris-area-chart"></div>
+                            <div class="user-btm-box">
+                                <div class="bio-desc">
+                                    <small>Full Name</small>
+                                    <h5>Adeniran Opeyemi</h5>
+                                </div>
+                                <div class="bio-desc">
+                                    <small>Mobile Number</small>
+                                    <h5>08113652536</h5>
+                                </div>
+                                <div class="bio-desc">
+                                    <small>Location</small>
+                                    <h5>Lagos</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -480,10 +479,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
 
-    <!-- Chart -->
-    <script src="plugins/bower_components/raphael/raphael-min.js" type="text/javascript"></script>
-    <script src="plugins/bower_components/morrisjs/morris.js" type="text/javascript"></script>
-    <script src="js/morris-data.js" type="text/javascript"></script>
 </body>
 
 </html>
