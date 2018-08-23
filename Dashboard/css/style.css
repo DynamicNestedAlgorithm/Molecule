@@ -3393,7 +3393,7 @@ ul.common li a:hover {
 }
 
 .user-bg .overlay-box {
-    background: #707cd2;
+    background: #00b2bd;
     opacity: .9;
     position: absolute;
     top: 0;
@@ -3822,9 +3822,10 @@ ul.common li a:hover {
 .customtab li.active a:hover {
     background: #fff;
     border: 0;
-    border-bottom: 2px solid #2cabe3;
+    border-bottom: 2px solid #00b2bd;
+    color: #00b2bd;
     margin-bottom: -1px;
-    color: #2cabe3
+    font-weight: bold;
 }
 
 .customtab li a,
@@ -4458,7 +4459,7 @@ table.focus-on tbody tr.focused th {
 .form-material .form-control,
 .form-material .form-control.focus,
 .form-material .form-control:focus {
-    background-image: linear-gradient(#707cd2, #707cd2), linear-gradient(rgba(120, 130, 140, .13), rgba(120, 130, 140, .13));
+    background-image: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206)) !important;
     border: 0;
     border-radius: 0;
     box-shadow: none;
@@ -5482,6 +5483,15 @@ ul#themecolors li:first-child {
 .weather h1 sup {
     font-size: 20px;
     top: -1.2em
+}
+
+.btn-mol {
+    background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206)) !important;
+    color: white;
+}
+
+.btn-mol:hover {
+    color: white;
 }
 
 .fcbtn {
@@ -19654,6 +19664,10 @@ ul.pro-amenities li span i {
 .step-register {
     position: absolute;
     height: 100%
+}
+
+.bio-desc small {
+    font-weight: bold;
 }
 
 .material-icon-list-demo .icons div {
