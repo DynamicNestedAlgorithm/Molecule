@@ -538,13 +538,16 @@ a:focus {
 	background-position: center;
 	background-attachment: fixed;
 }
-
+.client-item{
+	max-width: 250px;
+	margin: auto;
+}
 .clients .client-say {
 	padding: 100px;
 }
 
 .client-say .client-item span {
-	font-size: 40px;
+	font-size: 20px;
 	color: #fff;
 }
 
@@ -556,6 +559,7 @@ a:focus {
 .client-say .client-item p {
 	font-size: 20px;
 	color: white;
+	text-align: left !important;
 }
 
 .client-say .client-item h6 {
@@ -565,14 +569,15 @@ a:focus {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-	width: 20px;
+	width: 10px;
 	height: 4px;
 	border-radius: 0;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-	background: rgb(0, 213, 228);
+	background: rgb(1, 206, 221);
+	margin-top: 5px;
 }
 
 /* -------------------------------------------------------
@@ -680,9 +685,9 @@ a:focus {
 -------------------------------------------------------- */
 
 .hire {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(20, 91, 112, 0.8);
 	background-blend-mode: overlay;
-	background-image: url(../img/numbers.jpg);
+	background-image: url(../img/development.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -698,15 +703,15 @@ a:focus {
 .hire button {
 	padding: 7px 25px;
 	color: #fff;
-	font-size: 18px;
+	font-size: 14px;
 	letter-spacing: 1px;
-	background: rgb(0, 213, 228);
-	border: 1px solid rgb(0, 213, 228);
-	transition: all 0.5s;
+	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
+	transition: all 0.5s ease-in-out;
+	border-radius: 4px;	border: 0px solid rgb(0, 213, 228);
 }
 
 .hire button:hover {
-	background: transparent;
+	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 236, 221));
 }
 
 /* -------------------------------------------------------
@@ -769,17 +774,16 @@ a:focus {
 .contact .form-group {
 	margin-bottom: 30px;
 }
-
 .contact-item input,
-.contact-item textarea {
-	width: 100%;
-	font-size: 16px;
+.contact-item textarea, .option {
+	width: 90%;
+	font-size: 12px;
 	margin-bottom: 10px;
 	padding: 10px;
 	border: none;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px dashed #00a5b1b4;
 	background: none;
-	color: #757575;
+	color: #00a5b1b4;
 }
 
 .contact-item textarea {
@@ -790,7 +794,7 @@ a:focus {
 
 .contact-item input:focus,
 .contact-item textarea:focus {
-	border-color: rgb(0, 213, 228);
+	border-color: rgb(0, 222, 238);
 }
 
 .contact-item .button {
@@ -1177,7 +1181,6 @@ a:focus {
 	padding: 10px 30px;
 	color: #fff;
 	background: rgb(0, 213, 228);
-	border: 1px solid rgb(0, 213, 228);
 	margin-left: 15px;
 	transition: all 0.5s;
 }
@@ -1190,17 +1193,19 @@ a:focus {
 .btn-mol {
 	padding: 9px 25px;
 	color: #fff;
-	font-size: 16px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
 	transition: all 0.5s ease-in-out;
 	border-radius: 4px;
 }
-
+.small-font{
+	font-size: 14px !important;
+}
 .btn-mol-r {
 	padding: 8px 25px;
 	color: #032c3396;
-	font-size: 16px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	background: transparent;
 	border: 1.5px solid #032c3381;
@@ -1227,20 +1232,21 @@ a:focus {
 }
 
 .reg-color {
-	background: linear-gradient(90deg, #01e6e2, #03a097);
+	background: #fff;
+	border-right: 1.5px dashed rgba(0, 188, 201, 0.548);
 }
 .f-20 {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .reg-img {
 	margin: 0 auto;
-	width: 210px;
-	margin-top: 60px;
+	width: 170px;
+	margin-top: 80px;
 }
 
 .text-white {
-	color: white;
+	color: rgb(0, 187, 201);
 }
 
 .mt-2 {
@@ -1257,11 +1263,11 @@ a:focus {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-	width: 15px;
-	height: 15px;
+	width: 10px;
+	height: 10px;
 	border-radius: 15px;
 	background-color: white;
-	box-shadow: 2px 2px 5px #00000052;
+	box-shadow: 0px 0px 5px #19374b52;
 }
 .regg-img {
 	min-height: 100vh;
@@ -1274,14 +1280,16 @@ a:focus {
 	padding-left: 0px;
 }
 .reg-head {
-	margin-top: 50px;
+	margin-top: 30px;
+	font-size: 14px;
+	margin-bottom: 50px;
 }
 .d-inline {
 	display: inline-block;
 }
 .form-opt .active h6 {
 	font-weight: bold;
-	color: #01e6e2;
+	color: #00c6d4;
 }
 .form-opt h6 {
 	padding: 12px 12px;
@@ -1292,10 +1300,11 @@ a:focus {
 	margin: 0 auto;
 }
 .form-card {
-	background-color: #ffffff;
+	background-color: #fffffff3;
 	padding: 12px;
-	border-top-right-radius: 14px;
-	border-bottom-right-radius: 14px;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.863);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	min-height: 76vh;
 }
 .text-primary {
