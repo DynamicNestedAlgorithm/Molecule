@@ -33,7 +33,7 @@
     <link rel="icon" href="{{ asset('img/molecule-nav.png')}}">
 
 	<!-- Google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,500" rel="stylesheet">
 
 	<!--[if lt IE 9]-->
 	<script src="{{ asset('js/html5shiv.min.js')}}"></script>

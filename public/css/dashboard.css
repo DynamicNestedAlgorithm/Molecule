@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,500,700');
 @import "spinners.css";
 @import "icons/material-design-iconic-font/css/materialdesignicons.min.css";
 .preloader {
@@ -23,11 +23,13 @@
 
 body {
     background: #2f323e;
-    font-family: 'Comfortaa', cursive;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
     margin: 0;
     overflow-x: hidden;
     color: #313131;
-    font-weight: 300
+    font-weight: 300;
+    letter-spacing: 0.06em;
+
 }
 
 html {
@@ -42,10 +44,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: #313131;
-    font-family: 'Comfortaa', cursive;
+    color: #444444;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     margin: 10px 0;
-    font-weight: 300
 }
 
 h1 {
@@ -65,7 +66,8 @@ h3 {
 
 h4 {
     line-height: 22px;
-    font-size: 18px
+    font-size: 16px;
+    font-weight: 700;
 }
 
 h5 {
@@ -985,7 +987,7 @@ pre {
 }
 
 #page-wrapper {
-    padding: 0 0 60px;
+    padding: 0 8px 60px 8px;
     min-height: 568px;
     background: #edf1f5
 }
@@ -1003,26 +1005,31 @@ pre {
 .bg-title {
     background: #fff;
     overflow: hidden;
-    padding: 15px 10px 9px;
+    width:100%;
+    border-radius: 0px 0px 10px 0px;
+    padding: 8px 10px 7px;
     margin-bottom: 25px;
     margin-left: -25.5px;
     margin-right: -25.5px
 }
 
 .bg-title h4 {
-    text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 6px
+    margin-top: 6px;
+    margin-left:20px;
+
 }
 
 .bg-title .breadcrumb {
     background: 0 0;
     margin-bottom: 0;
+    margin-left:20px;
     /* float: right; */
     padding: 0;
+    margin-right:5px;
     font-size: 12px;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .bg-title .breadcrumb a {
@@ -1030,7 +1037,7 @@ pre {
 }
 
 .bg-title .breadcrumb a:hover {
-    color: #000
+    color: rgba(48, 47, 47, 0.863)
 }
 
 .bg-title .breadcrumb .active {
@@ -1761,14 +1768,27 @@ table.dataTable thead .sorting:after {
 .white-box {
     background: #fff;
     padding: 25px;
-    margin-bottom: 30px
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+}
+.white-box:hover{
+    box-shadow: 0px 0px 20px rgba(120, 156, 172, 0.205);
 }
 
 .white-box .box-title {
     margin: 0 0 12px;
     font-weight: 500;
-    text-transform: uppercase;
     font-size: 16px
+}
+.light{
+    font-weight: 300;
+}
+.medium{
+    font-weight: 500;
+}
+.bold{
+    font-weight: 700;
 }
 
 .panel {
@@ -1814,7 +1834,7 @@ table.dataTable thead .sorting:after {
 .panel .panel-body:first-child h3 {
     margin-top: 0;
     font-weight: 500;
-    font-family: 'Comfortaa', cursive;
+   font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 14px;
     text-transform: uppercase
 }
@@ -4681,11 +4701,24 @@ table.focus-on tbody tr.focused th {
 #recoverform {
     display: none
 }
+.new-btn{
+    margin: 10px 30px 0px 5px;
+    background:#fff;
+    font-weight:700;
+    color:#666;
+    font-size:13px;
+    border-radius:4px;
+    padding:6px 10px;
+}
+.new-btn:hover{
+    color: #000;
+}
 
 .new-login-register {
     position: fixed;
     height: 100%
 }
+
 
 .new-login-register .lg-info-panel {
     background: url(../../plugins/images/login-register.jpg) center center/cover no-repeat !important;
@@ -5104,6 +5137,25 @@ table.focus-on tbody tr.focused th {
     left: 8px
 }
 
+.btn-mol {
+	padding: 6px 25px;
+    color: #fff;
+    outline:none;
+    font-size: 15px;
+    border:none;
+    font-weight: 500;
+	letter-spacing: 1px;
+	background: linear-gradient(195deg, rgb(0, 204, 240), rgb(0, 221, 206));
+	transition: all 0.5s ease-in-out;
+	border-radius: 4px;
+}
+.center{
+    margin:auto;
+    width:100px;
+}
+.btn-mol:hover {
+	background: linear-gradient(195deg, rgb(0, 217, 255), rgb(0, 243, 227)) !important;
+}
 .right-sidebar {
     position: fixed;
     right: -240px;
@@ -5116,7 +5168,26 @@ table.focus-on tbody tr.focused th {
     box-shadow: 5px 1px 40px rgba(0, 0, 0, .1);
     transition: all .3s ease
 }
-
+.input-field{
+    border: 0px solid #fff;
+    padding: 5px;
+    width:70%;
+    font-size: 14px;
+    margin: auto;
+    color:rgb(17, 203, 216);
+    border-bottom: 1px dashed rgb(17, 203, 216);
+} 
+.label{
+    color:rgb(17, 203, 216);
+    font-size:12px;
+    margin-left:100px;
+}
+.middle-box{
+    width:85%;
+    margin: auto;
+    padding: 40px 30px;
+    margin-bottom:70px;
+}
 .right-sidebar .rpanel-title {
     display: block;
     padding: 21px;
@@ -5684,7 +5755,15 @@ ul.list-icons {
     margin: 0;
     padding: 0
 }
-
+.	font-family: 'M PLUS Rounded 1c', sans-serif;n{
+    padding: 6px 9px;
+    background:#fff;
+    color: #666;
+    margin: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    float:right;
+}
 ul.list-icons li {
     list-style: none;
     line-height: 40px
@@ -6956,6 +7035,7 @@ ul.select-row-icon li a:hover i.whn-hov {
 .sidebar {
     overflow-y: auto;
     background: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.094)
 }
 
 .sidebar .sidebar-nav.navbar-collapse {
@@ -7048,7 +7128,7 @@ ul.select-row-icon li a:hover i.whn-hov {
 }
 
 #side-menu li a {
-    color: #97999f;
+    color: #898c92;
     width: 240px
 }
 
@@ -7068,7 +7148,7 @@ ul.select-row-icon li a:hover i.whn-hov {
 
 #side-menu>li>a:focus,
 #side-menu>li>a:hover {
-    background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, 0)
 }
 
 #side-menu>li>a.active {
@@ -7089,7 +7169,10 @@ ul.select-row-icon li a:hover i.whn-hov {
     right: 20px;
     top: 23px
 }
-
+#side-menu a:hover{
+    color:#000 !important;
+    font-weight: 500;
+}
 .sidebar .nav-second-level .arrow {
     right: 20px;
     top: 17px

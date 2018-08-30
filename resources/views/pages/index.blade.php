@@ -128,40 +128,40 @@
 
 
 	<!-- jQuery -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script src="{{ asset('js/jquery-3.3.1.min.js')}}"></script>
+	<script src="{{ asset('http://code.jquery.com/jquery-migrate-3.0.0.min.js')}}"></script>
 
 	<!-- bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="{{ asset('js/bootstrap.min.js')}}"></script>
 
 	<!-- singlePageNav -->
-	<script src="js/jquery.singlePageNav.min.js"></script>
+	<script src="{{ asset('js/jquery.singlePageNav.min.js')}}"></script>
 
 	<!-- owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="{{ asset('js/owl.carousel.min.js')}}"></script>
 
 	<!-- stellar js -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
 
 	<!-- jquery.magnific-popup.min js -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
 
 	<!-- typed js -->
-	<script src="js/typed.js"></script>
+	<script src="{{ asset('js/typed.js')}}"></script>
 
 	<!-- isotope.pkgd.min js -->
-	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
 
 	<!-- particles.min js -->
-	<script src="js/particles.min.js"></script>
+	<script src="{{ asset('js/particles.min.js')}}"></script>
 
 	<!-- app js -->
-	<script src="js/app.js"></script>
+	<script src="{{ asset('js/app.js')}}"></script>
 
 	<!-- validator js -->
-	<script src="js/validator.js"></script>
+	<script src="{{ asset('js/validator.js')}}"></script>
 
 	<!-- custom js -->
-	<script src="js/custom.js"></script>
+	<script src="{{ asset('js/custom.js')}}"></script>
 
 @endsection
