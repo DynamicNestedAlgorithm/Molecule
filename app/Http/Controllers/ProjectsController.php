@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use Storage;
+
 class ProjectsController extends Controller
 {
     /**
@@ -13,8 +15,9 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $projects = Project::orderBy('description', 'desc')->paginate(10);
-        return view('dashboard.projects.index')->compact( $projects);
+        $projects = Project::orderBy('name', 'desc')->paginate(10);
+        return view('dashboard.projects.index', compact('projects'));
+
     }
 
     /**
@@ -39,21 +42,27 @@ class ProjectsController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'description'  => 'required',
-            'specification'   => 'required',
+            'file'   => 'required',
             'language'   => 'required',
             'deadline'   => 'required',
         ]);
-
-
-        //CREATE project 
-        $project  = new Project ;
-        $project ->name  = $request->input('name');
-        $project ->description  = $request->input('description');
-        $project ->specification  = $request->input('specification');
-        $project ->language  = $request->input('language');
-        $project ->deadline  = $request->input('deadline');
-        $project ->save();
-
+       
+   
+      $name = $request->input('name'); 
+      $description = $request->input('description'); 
+      $language = $request->input('language'); 
+      $deadline = $request->input('deadline'); 
+      $status = 'Specification Analysis';    
+      $file = $request->file('file')->store('public/files');
+        
+      Project::updateOrCreate([
+          'name' => $name,
+          'file' => $file,
+          'description' => $description,
+          'status'   => $status,
+          'language'   => $language,
+          'deadline'   => $deadline
+      ]);
         return redirect('/projects')->with('Awesome!, Project Created! :)');
     
     }

@@ -42,13 +42,13 @@
             <div id="page-wrapper">
                     <div class="row bg-title container">
                         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                            <h4 class="page-title">Create Project</h4>
+                            <h4 class="page-title">Development</h4>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="/home">Dashboard -</a>
                                 </li>  
                                 <li>
-                                    <a href="/projects"> - Projects</a>
+                                    <a href="/development"> - Development -</a>
                                 </li>
                             </ol>
                         </div>
@@ -60,35 +60,9 @@
                     <div class="row">
                        
                             <div class="white-box middle-box">
-                                <h2 class="box-title text-center" style="font-size:24px !important;">New Project</h2>
+                                <h2 class="box-title text-center" style="font-size:24px !important;">Development</h2>
                                 
-                                <div class="form container">
-                                    <form action="{{ route('projects.store') }}" method="post" enctype="multipart/form-data">
-                                        {{ csrf_field() }}
-                                         <div class="form-group row">
-                                                <input type="text" name="name" class="input-field" placeholder="Project Name">
-                                        </div>
-                                        <div class="form-group row">
-                                                <textarea type="text" name="description" class="input-field" placeholder="Short Description"></textarea>
-                                        </div>
-                                        <div class="form-group row">
-                                                <input type="text" name="language" class="input-field" placeholder="Preferred Language">
-                                        </div>
-                                        <div class="form-group row">
-                                                <input type="date" name="deadline" class="input-field" placeholder="Expected Deadline">
-                                        </div>
-                                        <label for="" class="label">Specifications:</label><br>
-
-                                        <div class="form-group row">
-                                                <input type="file" class="input-field" name="file" placeholder="Specification Document">
-                                        </div>
-
-                                        <br>
-                                        <div class="center">
-                                            <input type="submit" class="btn-mol" value="Create">
-                                        </div>
-                                    </form>
-                                </div>
+                              
                             </div>
                         </div>
                     </div>

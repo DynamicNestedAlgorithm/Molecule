@@ -67,13 +67,13 @@
                                                 </span>
                                             </li>
                                             <li class="col-last">
-                                                <h3 class="counter text-right m-t-15">23</h3>
+                                                <h3 class="counter text-right m-t-15">{{count($projects_count)}}</h3>
                                             </li>
                                             <li class="col-middle">
                                                 <h4>Total projects</h4>
                                                 <div class="progress">
-                                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                                        <span class="sr-only">40% Complete (success)</span>
+                                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{count($projects_count)}}" aria-valuemin="0" aria-valuemax="100" style="width: {{count($projects_count)}}%">
+                                                        <span class="sr-only">{{count($projects_count)}}% Complete (success)</span>
                                                     </div>
                                                 </div>
                                             </li>

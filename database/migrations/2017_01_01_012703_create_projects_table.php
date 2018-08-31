@@ -17,10 +17,11 @@ class CreateProjectsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('description');
-            $table->string('specification');
+            $table->string('file');
             $table->string('language');
+            $table->string('status');
             $table->string('deadline');
-            $table->string('deleted_at');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

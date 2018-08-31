@@ -4,7 +4,7 @@
             <!-- ============================================================== -->
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav slimscrollsidebar">
-                    <div class="user-profile">
+                    <div class="user-profile the-card">
                         <div class="dropdown user-pro-body">
                             <div>
                                 <img src="img/boy.png" alt="user-img" class="img-circle">
@@ -12,7 +12,7 @@
                             <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}
                                 <span class="caret"></span>
                             </a>
-                            <ul class="dropdown-menu animated slideInUp">
+                            <ul class="dropdown-menu the-card animated slideInUp">
                                 <li>
                                     <a href="#">
                                         <i class="ti-user"></i> My Profile</a>

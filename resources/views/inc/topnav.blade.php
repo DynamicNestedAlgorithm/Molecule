@@ -12,7 +12,7 @@
                         </b>
                     </a>
                 </div>
-            <a href="/create" class="new-btn" style="float:right;">Create Project</a>
+            <a href="{{ route('projects.create') }}" class="new-btn" style="float:right;">Create Project</a>
 
                 <!-- /Logo -->
                 <!-- Search input and Toggle icon -->

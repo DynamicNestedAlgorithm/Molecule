@@ -991,7 +991,17 @@ pre {
     min-height: 568px;
     background: #edf1f5
 }
-
+.the-card{
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 10px rgba(100,100,100,.034);
+    border-radius: 10px;
+    margin:10px;
+    transition: 0.3s ease-in-out;
+}
+.the-card:hover{
+    box-shadow: 0px 0px 30px rgba(100,100,100,.054);
+}
 .footer {
     bottom: 0;
     color: #58666e;
@@ -1768,12 +1778,12 @@ table.dataTable thead .sorting:after {
 .white-box {
     background: #fff;
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 30px;
     transition: all 0.2s ease-in-out;
 }
 .white-box:hover{
-    box-shadow: 0px 0px 20px rgba(120, 156, 172, 0.205);
+    box-shadow: 0px 0px 20px rgba(120, 156, 172, 0.105);
 }
 
 .white-box .box-title {
@@ -3075,7 +3085,7 @@ ul.common li a:hover {
     font-size: 16px;
     font-weight: 500;
     padding: 8px 0;
-    margin-top: 12px
+    margin-top: 20px
 }
 
 .mega-dropdown-menu li.demo-box a {
