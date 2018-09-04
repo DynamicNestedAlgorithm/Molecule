@@ -104,7 +104,7 @@
                                     @endif
                                 </div>
                             </div>
-    
+                            
                             <div class="form-group row">
                                 <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
     
@@ -126,7 +126,25 @@
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                 </div>
                             </div>
-    
+
+                            <div class="form-group row">
+                                <label for="user_type" class="col-md-4 col-form-label text-md-right">{{ __('Account Type') }}</label>
+                                <select name="user_type">
+                                    <option value="Business">Business</option>
+                                    <option value="Developer">Developer</option>
+                                    <option value="LabCoder">LabCoder</option>
+                                    <option value="Mentee">Mentee</option>
+                                </select>
+                                <div class="col-md-6">
+                                   
+                                    @if ($errors->has('user_type'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('user_type') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn-mol small-font">
@@ -141,4 +159,44 @@
         </div>
     </div>
 </div>
+   <!--====== js ======-->
+
+
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery-3.3.1.min.js')}}"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+
+    <!-- singlePageNav -->
+    <script src="{{ asset('js/jquery.singlePageNav.min.js')}}"></script>
+
+    <!-- owl carousel -->
+    <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+
+    <!-- stellar js -->
+    <script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
+
+    <!-- jquery.magnific-popup.min js -->
+    <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+
+    <!-- typed js -->
+    <script src="{{ asset('js/typed.js')}}"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
+
+    <!-- particles.min js -->
+    <script src="{{ asset('js/particles.min.js')}}"></script>
+
+    <!-- app js -->
+    <script src="js/app.js')}}"></script>
+
+    <!-- validator js -->
+    <script src="{{ asset('js/validator.js')}}"></script>
+
+    <!-- custom js -->
+    <script src="{{ asset('js/custom.js')}}"></script>
+
 @endsection

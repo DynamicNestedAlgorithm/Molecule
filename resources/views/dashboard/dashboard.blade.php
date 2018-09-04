@@ -168,7 +168,7 @@
                         </div>
                         <div class="col-md-8">
                             <div class="white-box">
-                                <h3 class="box-title m-b-0">Team Mates </h3>
+                                <h3 class="box-title m-b-0">Team Members </h3>
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>

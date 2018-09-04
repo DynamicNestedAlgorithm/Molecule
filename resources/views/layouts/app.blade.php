@@ -65,7 +65,7 @@
 	<script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
 
 	<!-- typed js -->
-	<script src="{{ asset('js/typed.js')}}"></script>
+	<script src="{{ asset('js/typed.js')}}" ></script>
 
 	<!-- isotope.pkgd.min js -->
 	<script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
@@ -81,7 +81,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 

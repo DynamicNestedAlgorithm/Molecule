@@ -135,6 +135,45 @@
         </div>
     </div>
 </div>
+   <!--====== js ======-->
+
+
+    <!-- jQuery -->
+    <script src="{{ asset('js/jquery-3.3.1.min.js')}}"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+
+    <!-- singlePageNav -->
+    <script src="{{ asset('js/jquery.singlePageNav.min.js')}}"></script>
+
+    <!-- owl carousel -->
+    <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+
+    <!-- stellar js -->
+    <script src="{{ asset('js/jquery.stellar.min.js')}}"></script>
+
+    <!-- jquery.magnific-popup.min js -->
+    <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+
+    <!-- typed js -->
+    <script src="{{ asset('js/typed.js')}}"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
+
+    <!-- particles.min js -->
+    <script src="{{ asset('js/particles.min.js')}}"></script>
+
+    <!-- app js -->
+    <script src="js/app.js')}}"></script>
+
+    <!-- validator js -->
+    <script src="{{ asset('js/validator.js')}}"></script>
+
+    <!-- custom js -->
+    <script src="{{ asset('js/custom.js')}}"></script>
 @endsection
 
                    

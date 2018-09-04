@@ -7,7 +7,7 @@
                     <div class="user-profile the-card">
                         <div class="dropdown user-pro-body">
                             <div>
-                                <img src="img/boy.png" alt="user-img" class="img-circle">
+                                <img src="{{asset('img/boy.png')}}" alt="user-img" class="img-circle">
                             </div>
                             <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}
                                 <span class="caret"></span>
@@ -29,8 +29,15 @@
                                 <li role="separator" class="divider"></li>
                                 <li>
                 <br>
-                                    <a href="{{ route('logout') }}">
-                                        <i class="fa fa-power-off"></i> Logout</a>
+                                    <a  href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                  <i class="fa fa-power-off"></i>  {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
                                 </li>
                             </ul>
                         </div>

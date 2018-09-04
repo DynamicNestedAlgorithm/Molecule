@@ -61,22 +61,38 @@
                        
                             <div class="white-box middle-box">
                                 <h2 class="box-title text-center" style="font-size:24px !important;">New Project</h2>
-                                
+                                <br>
                                 <div class="form container">
                                     <form action="{{ route('projects.store') }}" method="post" enctype="multipart/form-data">
                                         {{ csrf_field() }}
                                          <div class="form-group row">
                                                 <input type="text" name="name" class="input-field" placeholder="Project Name">
                                         </div>
+                                        <label for="" class="label">Project Type / Language</label><br>
+
                                         <div class="form-group row">
-                                                <textarea type="text" name="description" class="input-field" placeholder="Short Description"></textarea>
-                                        </div>
-                                        <div class="form-group row">
-                                                <input type="text" name="language" class="input-field" placeholder="Preferred Language">
+                                            <select  name="language" class="input-field">
+                                                <option value="Website ( HTML, CSS, Javascript )">Website ( HTML / CSS / Javascript )</option>
+                                                <option value="Web Application ( PHP, Laravel )">Web Application ( PHP / Laravel )</option>
+                                                <option value="Web Application ( Node JS, React JS )">Web Application ( Node JS / React  JS )</option>
+                                                <option value="Native Application ( React Native )">Native or Cross Platform Application ( React Native )</option>
+                                                <option value="iOS Application ( Swift )">iOS Application ( Swift )</option>
+                                                <option value="Android Application ( Java )">Android Application ( Java )</option>
+                                                <option value="UI & UX Design">UI / UX Design</option>
+                                                <option value="E-commerce Application ( PHP, Laravel )">E-commerce Application ( PHP / Laravel )</option>
+                                                <option value="E-commerce Application ( Node JS, React JS )">E-commerce Application ( Node JS / React JS )</option>
+                                                <option value="Content Management System">Content Management System</option>
+                                                <option value="Graphic Design">Graphic Design</option>
+                                            </select>
                                         </div>
                                         <div class="form-group row">
                                                 <input type="date" name="deadline" class="input-field" placeholder="Expected Deadline">
                                         </div>
+
+                                        <div class="form-group row" >
+                                                <textarea type="text" name="description" class="input-field" placeholder="Short Description"></textarea>
+                                        </div>
+
                                         <label for="" class="label">Specifications:</label><br>
 
                                         <div class="form-group row">
