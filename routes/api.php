@@ -16,3 +16,14 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('messages', 'MessageController@index');
+    Route::post('messages', 'MessageController@store');
+    Route::get('messages/{id}', 'MessageController@show');
+    Route::post('messages/{id}/read', 'MessageController@updateLastReadAt');
+    Route::put('messages/{id}', 'MessageController@update');
+    Route::delete('messages/{id}', 'MessageController@deleteThreadFromList');
+    Route::get('messages/{id}/messages', 'MessageController@threadMessages');
+
+});

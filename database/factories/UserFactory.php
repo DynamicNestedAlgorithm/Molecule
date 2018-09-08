@@ -21,3 +21,18 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Thread::class, function (Faker $faker) {
+    return [
+        'subject' => $faker->unique()->word,
+        'type' => '1',
+    ];
+});
+
+$factory->define(App\Message::class, function (Faker $faker) {
+    return [
+        'thread_id' => rand(1,50),
+        'user_id' => rand(1,15),
+        'body' => $faker->text,
+    ];
+});
